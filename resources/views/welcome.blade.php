@@ -19,4 +19,5 @@
          {{ Form::submit('Uploader !') }}
          {{ Form::close() }}
     </body>
+    etstt
 </html>
