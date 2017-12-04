@@ -11,12 +11,26 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     </head>
     <body>
-         {{ Form::open(array('url' => '/','files'=>'true')) }}
-         {{ 'Fichier à uploader :' }}
-         {{ Form::file('image') }}<br/>
-         <input type="mail" name="mail_from" placeholder="Votre Email"><br/>
-         <input type="mail" name="mail_to" placeholder="Email du destinataire"><br/>
-         {{ Form::submit('Uploader !') }}
-         {{ Form::close() }}
+    	<div class="container">
+    		<div class="row">
+	    		<div class="col-md-12">
+	    			<h1>Bienvenue sur NonTransfer !</h1>
+	    		</div>
+	    	</div>
+    		<div class="row">
+	    		<div class="col-md-6">
+			         {{ Form::open(array('url' => '/','files'=>'true')) }}
+			         {{ 'Fichier à uploader :' }}
+			         {{ Form::file('image') }}<br/>
+			         <input type="mail" name="mail_from" placeholder="Votre Email"><br/>
+			         <input type="mail" name="mail_to" placeholder="Email du destinataire"><br/>
+			         {{ Form::submit('Uploader !') }}
+			         {{ Form::close() }}
+			    </div><!--
+
+			    --><div class="col-md-6">
+			    </div>
+			</div>
+     	</div>
     </body>
 </html>
