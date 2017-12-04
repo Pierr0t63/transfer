@@ -11,9 +11,11 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     </head>
     <body>
-         {{ Form::open(array('url' => '/uploadfile','files'=>'true')) }}
-         {{ 'Fichier à uplaoder :' }}
-         {{ Form::file('image') }}
+         {{ Form::open(array('url' => '/','files'=>'true')) }}
+         {{ 'Fichier à uploader :' }}
+         {{ Form::file('image') }}<br/>
+         <input type="mail" name="mail_from" placeholder="Votre Email"><br/>
+         <input type="mail" name="mail_to" placeholder="Email du destinataire"><br/>
          {{ Form::submit('Uploader !') }}
          {{ Form::close() }}
     </body>
