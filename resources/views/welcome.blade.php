@@ -19,5 +19,4 @@
          {{ Form::submit('Uploader !') }}
          {{ Form::close() }}
     </body>
-    etsttsssssdgzeyibdfde
 </html>
