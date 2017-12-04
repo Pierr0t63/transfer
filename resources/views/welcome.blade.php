@@ -19,5 +19,5 @@
          {{ Form::submit('Uploader !') }}
          {{ Form::close() }}
     </body>
-    etstt
+    etsttsssss
 </html>
