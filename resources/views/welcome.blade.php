@@ -18,5 +18,5 @@
          <input type="mail" name="mail_to" placeholder="Email du destinataire"><br/>
          {{ Form::submit('Uploader !') }}
          {{ Form::close() }}
-    </body>
+    </body>e
 </html>
