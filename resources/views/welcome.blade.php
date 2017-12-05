@@ -35,7 +35,7 @@
 					{{ Form::close() }}
 				</div><!--
 
-				--><div class="col-md-6">
+				--><div class="col-md-6" id="presentation">
 					<p>
 						NonTransfer est une plateforme d'hébergement éphémère de fichier rapide et simple à utiliser !<br>
 						Riche de près de 2 milliards d'utilisateurs, nous avons hébergé plusieurs dizaines de milliards de
