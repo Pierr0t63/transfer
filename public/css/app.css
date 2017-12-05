@@ -8372,3 +8372,25 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important;
 }
 /*# sourceMappingURL=bootstrap.css.map */
+#formulaire p,
+#formulaire input{
+	max-width: 100%;
+}
+#formulaire p{
+	padding: 5px;
+	background-color: #A971F3;
+}
+#formulaire p:last-child{
+	margin-top: 0;
+    margin-bottom: 0;
+}
+#formulaire form{
+	padding: 15px;
+	background-color: #27005A;
+}
+#formulaire input{
+	width: 100%;
+}
+#formulaire input[type=submit]{
+	border-radius: 0px;
+}

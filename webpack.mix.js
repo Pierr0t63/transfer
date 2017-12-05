@@ -12,7 +12,8 @@ let mix = require('laravel-mix');
  */
 
 mix.styles([
-    'resources/assets/css/bootstrap.css'
+    'resources/assets/css/bootstrap.css',
+    'resources/assets/css/app.css'
 ], 'public/css/app.css')
 .scripts([
     'resources/assets/js/jquery-3.2.1.js',
