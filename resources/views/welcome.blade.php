@@ -35,7 +35,7 @@
 					{{ Form::close() }}
 				</div><!--
 
-				--><div class="col-md-6" id="presentation">
+				--><div class="col-md-6">
 					<p>
 
 					</p>

@@ -13,8 +13,8 @@ function SendMail($from, $to, $realname, $uniquename){
     $unique_name = $uniquename;
     //
     $subject = 'Vous avez un nouveau fichier';
-    $content= $from.' vous a envoyé via nos services.<br/>Lien de téléchargeemnt: http://www.nontransfer.fr/'. $unique_name.'/'.$real_name;
-    if (mail($to ,$from ,$subject, $content)) {
+    $content= $from.' vous a envoyé via nos services.<br/>Lien de téléchargeemnt: http://www.nontransfer.fr/telechargement?dossier='.$unique_name.'&fichier='.$real_name;
+    if (mail($to ,$from ,$subject, $content)){
         echo 'bravo le mail est envoyé';    
             }else{
                 echo "t'es dans la mouise";

@@ -12,5 +12,9 @@
 */
 
 Route::get('/','UploadFileController@index');
+Route::get('/telechargement', function () {
+    return view('download');
+});
+
 Route::post('/','UploadFileController@showUploadFile');
 
