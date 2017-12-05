@@ -13,7 +13,7 @@
     	<div class="container">
     		<div class="row">
 	    		<div class="col-md-12">
-	    			<h1 class="text-center">Bienvenue sur NonTransfer !</h1>
+	    			<h1 class="text-center titre-formulaire">Bienvenue sur NonTransfer !</h1>
 	    		</div>
 	    	</div>
 			<div class="row">
@@ -37,7 +37,15 @@
 
 				--><div class="col-md-6">
 					<p>
-
+						NonTransfer est une plateforme d'hébergement éphémère de fichier rapide et simple à utiliser !<br>
+						Riche de près de 2 milliards d'utilisateurs, nous avons hébergé plusieurs dizaines de milliards de
+						fichiers à travers d'innonmbrables univers de la Terre jusqu'à Namek !
+					</p>
+					<p>
+						Pour partager votre fichier, saisissez simplement votre adresse de messagerie électronique ainsi 
+						que celle de la personne à qui vous souhaitez envoyer votre fichier et c'est tout !<br>
+						Vous obtiendrez un lien de téléchargement qui sera également envoyé aux deux adresses de messagerie
+						électronique que vous avez renseignées.
 					</p>
 				</div>
 			</div>
