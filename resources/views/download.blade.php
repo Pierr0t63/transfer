@@ -17,6 +17,8 @@
     	?>
     	<a href="http://www.nontransfer.fr/uploads/{{ $dossier }}/{{ $fichier }}"
   download="{{ $fichier }}">Télécharger le fichier {{ $fichier }}</a>
-  		<?php }?>
+  		<?php }else{?>
+        <p>Le fichier n'existe pas!</p>
+<?php }?>
     </body>
 </html>
