@@ -13,6 +13,7 @@ class fileRequest extends FormRequest
      */
     public function authorize()
     {
+        $success = "Upload réussi";
         return true;
     }
 

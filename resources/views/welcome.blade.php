@@ -28,6 +28,12 @@
 					            @endforeach
 					        </ul>
 					    </div>
+					@elseif(session()->has('message'))
+						<div class="alert alert-success text-center">
+					        <ul>
+					            <li>{{ session()->get('message') }}</li>
+					        </ul>
+					    </div>
 					@endif
 
 					{{ Form::open(array('url' => '/','files'=>'true')) }}
