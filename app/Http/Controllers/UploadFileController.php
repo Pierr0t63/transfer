@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
-use App\Http\Requests;
+
+use App\Http\Requests\fileRequest;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Models\File;
@@ -12,7 +12,7 @@ class UploadFileController extends Controller {
       return view('welcome');
    }
 
-   public function showUploadFile(Request $request){
+   public function showUploadFile(fileRequest $request){
 		$file = new File();
 		$file->mail_from = $request->mail_from;
 		$file->mail_to = $request->mail_to;

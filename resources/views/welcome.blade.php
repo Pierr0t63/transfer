@@ -20,6 +20,16 @@
 	    	</div>
 			<div class="row">
 				<div class="col-md-6" id="formulaire">
+					@if ($errors->any())
+					    <div class="alert alert-danger text-center">
+					        <ul>
+					            @foreach ($errors->all() as $error)
+					                <li>{{ $error }}</li>
+					            @endforeach
+					        </ul>
+					    </div>
+					@endif
+
 					{{ Form::open(array('url' => '/','files'=>'true')) }}
 					<p>
 						{{ 'Fichier à uploader :' }}
