@@ -8,6 +8,8 @@
     <title>NonTransfer</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('css')
+
+    <script src=" {{ asset('js/app.js') }}"></script>
 </head>
     <body>
     	<?php
