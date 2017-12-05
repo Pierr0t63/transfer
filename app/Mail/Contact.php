@@ -12,10 +12,14 @@ class Contact extends Mailable
     use Queueable, SerializesModels;
 
     public $contact;
+    public $dossier;
+    public $fichier;
 
-    public function __construct(Array $contact)
+    public function __construct($contact, $dossier, $fichier)
     {
         $this->contact = $contact;
+        $this->dossier = $dossier;
+        $this->fichier = $fichier;
     }
 
      public function build()
