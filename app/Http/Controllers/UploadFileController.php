@@ -24,8 +24,9 @@ class UploadFileController extends Controller {
 
       $destinationPath = 'uploads/'.$file->unique_name;
       $request->image->move($destinationPath,$file->real_name);
-      Mail::to($file->mail_to)->send(new Contact($request->except('_token'),$file->unique_name, $file->real_name));
-      
+      Mail::to($file->mail_to)
+      ->cc($file->mail_from)
+      ->send(new Contact($request->except('_token'),$file->unique_name, $file->real_name));
       return redirect()->back()->with('message', 'Fichier uploadé avec succès !');
    
    }
