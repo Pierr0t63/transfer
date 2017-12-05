@@ -8372,6 +8372,13 @@ a.text-dark:focus, a.text-dark:hover {
   visibility: hidden !important;
 }
 /*# sourceMappingURL=bootstrap.css.map */
+body,html{
+	box-sizing: border-box;
+}
+#formulaire h1{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
 #formulaire p,
 #formulaire input{
 	max-width: 100%;
@@ -8392,5 +8399,20 @@ a.text-dark:focus, a.text-dark:hover {
 	width: 100%;
 }
 #formulaire input[type=submit]{
+	background-color: #772BDB;
+	color: #2C272C;
+	box-sizing: inherit;
 	border-radius: 0px;
+	border: 1px solid #772BDB;
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+	outline: 1px solid #772BDB;
+	outline-offset: 0px;
+	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+#formulaire input[type=submit]:hover {
+	color: #fff;
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+	outline-color: rgba(255, 255, 255, 0);
+	outline-offset: 15px; 
 }
