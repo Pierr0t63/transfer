@@ -7,8 +7,9 @@
     <h2>Nouveau ficher</h2>
     <p>Un de vos contact vous a envoyé un fichier via nos services</p>
     <ul>
-      <li><strong>Email du contact</strong> : {{ $contact['mail_from'] }}</li>
-      <li><strong>Lien du téléchargement</strong> : <a href="http://www.nontransfer.fr/download/{{$dossier}}/{{$fichier}}">http://www.nontransfer.fr/download/{{$dossier}}/{{$fichier}}</a></li>
+      <p><strong>Email du contact</strong> : {{ $contact['mail_from'] }}</p>
+      <p><strong>Lien du téléchargement: </strong><a href="http://www.nontransfer.fr/download/{{$dossier}}/{{$fichier}}">Cliquez ici</a></p>
+      <p>Si le lien ne fonctionne pas, copiez ce lien dans votre barre de navigateur: http://www.nontransfer.fr/download/{{$dossier}}/{{$fichier}}</p>
     </ul>
   </body>
 </html>
