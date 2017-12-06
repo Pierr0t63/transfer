@@ -39,9 +39,8 @@ class CleanFiles extends Command
      */
     public function handle()
     {
-        $numDays = 2;
+        $numDays = 3;
         $files = File::whereRaw("created_at < '".Carbon::now()->subDays($numDays)."'")->get();
-        //echo Carbon::now()->subDays(2)->format('Y-m-d');
         foreach ($files as $f) {
             $path = 'storage/uploads/';
             $filename = $path.$f->unique_name.'/'.$f->real_name;
