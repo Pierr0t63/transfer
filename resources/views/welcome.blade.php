@@ -7,9 +7,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>NonTransfer</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/progressbar.css') }}" rel="stylesheet">
     @yield('css')
 
     <script src=" {{ asset('js/app.js') }}"></script>
+    <script src=" {{ asset('js/progressbar.js') }}"></script>
 </head>
     <body>
     	<div class="container">
@@ -36,7 +38,7 @@
 					    </div>
 					@endif
 
-					{{ Form::open(array('url' => '/','files'=>'true')) }}
+					{{ Form::open(array('url' => '/','files'=>'true', 'name'=> 'upForm')) }}
 					<p>
 						{{ 'Fichier à uploader :' }}
 						{{ Form::file('image') }}
@@ -48,11 +50,15 @@
 						<input type="mail" name="mail_to" placeholder="Email du destinataire">
 					</p>
 					<p>
-						{{ Form::submit('Uploader !',['class' => 'text-center btn']) }}
+						{{ Form::submit('Uploader !',['class' => 'text-center btn','id' =>'valider']) }}
 					</p>
 					{{ Form::close() }}
-				</div><!--
-
+                <div id="myprogressbar" class="progress masque">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+				</div>
+                <!--
+            
 				--><div class="col-md-6" id="presentation">
 					<p>
 						NonTransfer est une plateforme d'hébergement éphémère de fichier rapide et simple à utiliser !<br>
