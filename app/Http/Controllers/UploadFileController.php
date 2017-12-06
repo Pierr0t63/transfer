@@ -22,8 +22,8 @@ class UploadFileController extends Controller {
 		$file->unique_name = quickRandom(20);
 		$file->save();
 
-      $destinationPath = 'uploads/'.$file->unique_name;
-      $request->image->move($destinationPath,$file->real_name);
+      $destinationPath = '/uploads/'.$file->unique_name;
+      $request->image->move(storage_path().$destinationPath,$file->real_name);
       Mail::to($file->mail_to)
       ->cc($file->mail_from)
       ->send(new Contact($request->except('_token'),$file->unique_name, $file->real_name));
