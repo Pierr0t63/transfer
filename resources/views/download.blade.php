@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    @if(isset($folder) && isset($filename))
+                    @if((isset($folder) && isset($filename)) && (file_exists(storage_path() .'/uploads/'.$folder.'/'. $filename)))
                     	<a class="btn btn-success" href="{{ route('downloadInit',['folder'=>$folder,'filename'=>$filename]) }}">
                             Télécharger le fichier {{ $filename }}
                         </a>
