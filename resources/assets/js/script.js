@@ -7,6 +7,6 @@ $( document ).ready(function() {
 	        { src: "/img/slide3.jpg" }
 	    ],
 	    overlay: "/img/overlays/08.png",
-	    animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ]
+	    animation: random
 	});
 });
