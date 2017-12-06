@@ -46,6 +46,7 @@ class CleanFiles extends Command
             $path = 'storage/uploads/';
             $filename = $path.$f->unique_name.'/'.$f->real_name;
             $foldername = $path.$f->unique_name;
+            $files2 = File::whereRaw("created_at < '".Carbon::now()->subDays($numDays)."'")->delete();
             if(file_exists($filename))
             unlink($filename);
             unlink($foldername);
