@@ -12,15 +12,23 @@
     <script src=" {{ asset('js/app.js') }}"></script>
 </head>
     <body>
-    	<?php
-    	if (isset($_GET['dossier']) && isset($_GET['fichier'])){
-    		$dossier = $_GET['dossier'];
-    		$fichier = $_GET['fichier'];
-    	?>
-    	<a href="http://www.nontransfer.fr/uploads/{{ $dossier }}/{{ $fichier }}"
-  download="{{ $fichier }}">Télécharger le fichier {{ $fichier }}</a>
-  		<?php }else{?>
-        <p>Le fichier n'existe pas!</p>
-<?php }?>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    @if(isset($_GET['dossier']) && isset($_GET['fichier']))
+                    	<?php
+                            $dossier = $_GET['dossier'];
+                            $fichier = $_GET['fichier'];
+                        ?>
+
+                    	<a class="btn btn-success" href="http://www.nontransfer.fr/uploads/{{ $dossier }}/{{ $fichier }}" download="{{ $fichier }}">
+                            Télécharger le fichier {{ $fichier }}
+                        </a>
+                    @else
+                        <p class="btn btn-danger">Le fichier n'existe pas!</p>
+                    @endif
+                </div>
+            </div>
+        </div>
     </body>
 </html>
