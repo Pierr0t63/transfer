@@ -2,6 +2,11 @@ body,html{
 	box-sizing: border-box;
 	color: #fff;
 }
+.equal{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
 
 .alert ul{
 	padding: 0;

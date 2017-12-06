@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>NonTransfer</title>
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/progressbar.css') }}" rel="stylesheet">
     @yield('css')
+    <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
 
     <script src=" {{ asset('js/app.js') }}"></script>
     <script src=" {{ asset('js/progressbar.js') }}"></script>
@@ -20,7 +22,7 @@
 	    			<h1 class="text-center titre-formulaire">Bienvenue sur NonTransfer !</h1>
 	    		</div>
 	    	</div>
-			<div class="row">
+			<div class="row equal">
 				<div class="col-md-6" id="formulaire">
 					@if ($errors->any())
 					    <div class="alert alert-danger text-center">
@@ -69,7 +71,8 @@
 						Pour partager votre fichier, saisissez simplement votre adresse de messagerie électronique ainsi 
 						que celle de la personne à qui vous souhaitez envoyer votre fichier et c'est tout !<br>
 						Vous obtiendrez un lien de téléchargement qui sera également envoyé aux deux adresses de messagerie
-						électronique que vous avez renseignées.
+						électronique que vous avez renseignées. Votre fichier sera disponible au
+						téléchargement pendant 72 heures.
 					</p>
 				</div>
 			</div>

@@ -7,8 +7,10 @@
     <meta name="robots" content="noindex">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>NonTransfer</title>
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('css')
+    <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
 
     <script src=" {{ asset('js/app.js') }}"></script>
 </head>
